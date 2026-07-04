@@ -489,4 +489,15 @@ Corrupted file: {0}</value></data>
   <data name="Menu_CheckUpdates" xml:space="preserve"><value>Check Updates</value></data>
   <data name="Tip_Builds" xml:space="preserve"><value>Builds</value></data>
 
+  <!-- ==================== Custom editor paths ==================== -->
+  <data name="Btn_AddEditor" xml:space="preserve"><value>Add Editor</value></data>
+  <data name="Tip_AddEditor" xml:space="preserve"><value>Browse and add Unity.exe directly to the list</value></data>
+  <data name="Menu_RemoveFromList" xml:space="preserve"><value>Remove from List</value></data>
+  <data name="Dlg_SelectUnityExe" xml:space="preserve"><value>Select Unity.exe</value></data>
+  <data name="Status_NotUnityExe" xml:space="preserve"><value>Selected file is not Unity.exe</value></data>
+  <data name="Status_EditorAlreadyInList" xml:space="preserve"><value>Editor already in the list</value></data>
+  <data name="Status_EditorAdded" xml:space="preserve"><value>Added editor</value></data>
+  <data name="Status_EditorRemoved" xml:space="preserve"><value>Removed editor from list</value></data>
+  <data name="Status_NotInCustomList" xml:space="preserve"><value>This editor is not in the custom list (scanned from root folder)</value></data>
+
 </root>

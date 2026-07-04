@@ -290,7 +290,12 @@
                     <!-- search box -->
                     <controls:SearchBoxControl x:Name="searchBoxUnitys" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,5,0,0" />
 
-                    <Button Style="{StaticResource CustomButton}" ToolTip="{loc:Loc Tip_RefreshInstallations}" x:Name="btnRefreshUnityList" Content="⟳" Height="22" Width="26" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="16"  Margin="0,4,3,0" Padding="1,-2,1,1"  Click="BtnRefreshUnityList_Click"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,4,3,0">
+                        <Button Style="{StaticResource CustomButton}" x:Name="btnAddUnityEditor" ToolTip="{loc:Loc Tip_AddEditor}" Click="BtnAddUnityEditor_Click" Height="22" Margin="0,0,5,0" Padding="6,0,6,0">
+                            <Label Content="{loc:Loc Btn_AddEditor}" Foreground="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Control}}}" />
+                        </Button>
+                        <Button Style="{StaticResource CustomButton}" ToolTip="{loc:Loc Tip_RefreshInstallations}" x:Name="btnRefreshUnityList" Content="⟳" Height="22" Width="26" FontSize="16" Padding="1,-2,1,1" Click="BtnRefreshUnityList_Click"/>
+                    </StackPanel>
 
                     <DataGrid x:Name="dataGridUnitys"  SelectionMode="Single" Margin="4,30,2,42" Background="{x:Null}" BorderBrush="{x:Null}" ColumnHeaderStyle="{StaticResource HeaderStyle}" Padding="0" HorizontalScrollBarVisibility="Disabled" HeadersVisibility="Column" Foreground="{DynamicResource ThemeGridForeground}" HorizontalGridLinesBrush="{DynamicResource ThemeDatagridLines}" VerticalGridLinesBrush="{DynamicResource ThemeGridVerticalGridLines}" CanUserAddRows="False" AutoGenerateColumns="False" PreviewKeyDown="DataGridUnitys_PreviewKeyDown" PreviewMouseDoubleClick="DataGridUnitys_PreviewMouseDoubleClick">
                         <DataGrid.CommandBindings>
@@ -352,6 +357,7 @@
                                 </MenuItem>
                                 <Separator></Separator>
                                 <MenuItem x:Name="menuUninstallEditor" Header="{loc:Loc Menu_Uninstall}" Click="menuUninstallEditor_Click"/>
+                                <MenuItem x:Name="menuRemoveFromList" Header="{loc:Loc Menu_RemoveFromList}" Click="menuRemoveFromList_Click"/>
 
                             </ContextMenu>
                         </DataGrid.ContextMenu>

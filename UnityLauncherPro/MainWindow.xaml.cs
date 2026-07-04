@@ -1500,6 +1500,86 @@ namespace UnityLauncherPro
             }
         }
 
+        // opens file dialog to select a Unity.exe directly and adds it to the custom editor list
+        private void BtnAddUnityEditor_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new Microsoft.Win32.OpenFileDialog();
+            dialog.Title = LocalizationManager.Instance["Dlg_SelectUnityExe"];
+            dialog.Filter = "Unity.exe|Unity.exe|Executable files|*.exe|All files|*.*";
+            try
+            {
+                dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
+            }
+            catch { }
+            var result = dialog.ShowDialog();
+            if (result != true) return;
+
+            var exePath = dialog.FileName;
+            if (File.Exists(exePath) == false) return;
+            if (string.Equals(Path.GetFileName(exePath), "Unity.exe", StringComparison.OrdinalIgnoreCase) == false)
+            {
+                SetStatus(LocalizationManager.Instance["Status_NotUnityExe"] + ": " + exePath, MessageType.Error);
+                return;
+            }
+
+            var customPaths = Properties.Settings.Default.customUnityExePaths;
+            if (customPaths == null)
+            {
+                customPaths = new StringCollection();
+            }
+
+            // check duplicate
+            foreach (string p in customPaths)
+            {
+                if (string.Equals(p, exePath, StringComparison.OrdinalIgnoreCase))
+                {
+                    SetStatus(LocalizationManager.Instance["Status_EditorAlreadyInList"] + ": " + exePath, MessageType.Error);
+                    return;
+                }
+            }
+
+            customPaths.Add(exePath);
+            Properties.Settings.Default.customUnityExePaths = customPaths;
+            Properties.Settings.Default.Save();
+            UpdateUnityInstallationsList();
+            SetStatus(LocalizationManager.Instance["Status_EditorAdded"] + ": " + exePath, MessageType.Info);
+        }
+
+        // removes currently selected editor from the custom paths list (only if it was added via "Add Editor")
+        private void menuRemoveFromList_Click(object sender, RoutedEventArgs e)
+        {
+            var unity = GetSelectedUnity();
+            if (unity == null || string.IsNullOrEmpty(unity.Path)) return;
+
+            var customPaths = Properties.Settings.Default.customUnityExePaths;
+            if (customPaths == null)
+            {
+                SetStatus(LocalizationManager.Instance["Status_NotInCustomList"], MessageType.Info);
+                return;
+            }
+
+            string toRemove = null;
+            foreach (string p in customPaths)
+            {
+                if (string.Equals(p, unity.Path, StringComparison.OrdinalIgnoreCase))
+                {
+                    toRemove = p;
+                    break;
+                }
+            }
+
+            if (toRemove == null)
+            {
+                SetStatus(LocalizationManager.Instance["Status_NotInCustomList"], MessageType.Info);
+                return;
+            }
+
+            customPaths.Remove(toRemove);
+            Properties.Settings.Default.Save();
+            UpdateUnityInstallationsList();
+            SetStatus(LocalizationManager.Instance["Status_EditorRemoved"] + ": " + unity.Path, MessageType.Info);
+        }
+
         // need to manually move into next/prev rows? Not using https://stackoverflow.com/a/11652175/5452781
         private void GridRecent_PreviewKeyDown(object sender, KeyEventArgs e)
         {

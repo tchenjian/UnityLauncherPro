@@ -489,4 +489,15 @@
   <data name="Menu_CheckUpdates" xml:space="preserve"><value>检查更新</value></data>
   <data name="Tip_Builds" xml:space="preserve"><value>构建</value></data>
 
+  <!-- ==================== 自定义编辑器路径 ==================== -->
+  <data name="Btn_AddEditor" xml:space="preserve"><value>添加编辑器</value></data>
+  <data name="Tip_AddEditor" xml:space="preserve"><value>浏览并直接添加 Unity.exe 到列表</value></data>
+  <data name="Menu_RemoveFromList" xml:space="preserve"><value>从列表移除</value></data>
+  <data name="Dlg_SelectUnityExe" xml:space="preserve"><value>选择 Unity.exe</value></data>
+  <data name="Status_NotUnityExe" xml:space="preserve"><value>选择的文件不是 Unity.exe</value></data>
+  <data name="Status_EditorAlreadyInList" xml:space="preserve"><value>编辑器已在列表中</value></data>
+  <data name="Status_EditorAdded" xml:space="preserve"><value>已添加编辑器</value></data>
+  <data name="Status_EditorRemoved" xml:space="preserve"><value>已从列表移除编辑器</value></data>
+  <data name="Status_NotInCustomList" xml:space="preserve"><value>此编辑器不在自定义列表中（从根文件夹扫描）</value></data>
+
 </root>
