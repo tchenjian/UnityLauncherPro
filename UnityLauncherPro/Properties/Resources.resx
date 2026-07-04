@@ -1,17 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -114,4 +114,379 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+
+  <!-- ==================== App / Status bar ==================== -->
+  <data name="App_Title" xml:space="preserve"><value>UnityLauncherPro</value></data>
+  <data name="Status_Ready" xml:space="preserve"><value>Ready</value></data>
+  <data name="Build_Prefix" xml:space="preserve"><value>Build: </value></data>
+
+  <!-- ==================== Tabs ==================== -->
+  <data name="Tab_Projects" xml:space="preserve"><value>Projects</value></data>
+  <data name="Tab_Editors" xml:space="preserve"><value>Editors</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>Updates</value></data>
+  <data name="Tab_Tools" xml:space="preserve"><value>Tools</value></data>
+  <data name="Tab_Settings" xml:space="preserve"><value>Settings</value></data>
+
+  <!-- ==================== Projects tab ==================== -->
+  <data name="Btn_AddProject" xml:space="preserve"><value>Add Project..</value></data>
+  <data name="Tip_AddProject" xml:space="preserve"><value>Browse and add existing project to list</value></data>
+  <data name="Tip_Refresh" xml:space="preserve"><value>Refresh list (F5)</value></data>
+  <data name="Col_Project" xml:space="preserve"><value>Project</value></data>
+  <data name="Col_Version" xml:space="preserve"><value>Version</value></data>
+  <data name="Col_Path" xml:space="preserve"><value>Path</value></data>
+  <data name="Col_Modified" xml:space="preserve"><value>Modified</value></data>
+  <data name="Col_Arguments" xml:space="preserve"><value>Arguments</value></data>
+  <data name="Col_Branch" xml:space="preserve"><value>Branch</value></data>
+  <data name="Col_Platform" xml:space="preserve"><value>Platform</value></data>
+  <data name="Col_SRP" xml:space="preserve"><value>SRP</value></data>
+  <data name="Btn_Upgrade" xml:space="preserve"><value>_Upgrade</value></data>
+  <data name="Btn_NewProject" xml:space="preserve"><value>_New Project</value></data>
+  <data name="Btn_RunUnity" xml:space="preserve"><value>_Run Unity</value></data>
+  <data name="Btn_OpenProject" xml:space="preserve"><value>_Open Project</value></data>
+  <data name="Btn_Explore" xml:space="preserve"><value>_Explore</value></data>
+  <data name="Tip_WithSelectedUnity" xml:space="preserve"><value>With selected Unity</value></data>
+
+  <!-- Projects context menu -->
+  <data name="Menu_CopyVersion" xml:space="preserve"><value>Copy Unity Version</value></data>
+  <data name="Menu_CopyPath" xml:space="preserve"><value>Copy Project Path</value></data>
+  <data name="Menu_ShowInExplorer" xml:space="preserve"><value>Show in Explorer</value></data>
+  <data name="Menu_OpenPersistentDataPath" xml:space="preserve"><value>Open PersistentDataPath</value></data>
+  <data name="Menu_CreateShortcut" xml:space="preserve"><value>Create Shortcut on Desktop</value></data>
+  <data name="Menu_OpenEditorLog" xml:space="preserve"><value>Open Editor.Log</value></data>
+  <data name="Menu_KillProcess" xml:space="preserve"><value>Kill Process</value></data>
+  <data name="Menu_StartWebGLServer" xml:space="preserve"><value>Start WebGL server</value></data>
+  <data name="Menu_InstallAPK" xml:space="preserve"><value>Install &amp; Run latest APK</value></data>
+  <data name="Menu_Build" xml:space="preserve"><value>Build</value></data>
+  <data name="Menu_BuildAndroid" xml:space="preserve"><value>Android</value></data>
+  <data name="Menu_BuildIOS" xml:space="preserve"><value>IOS</value></data>
+  <data name="Menu_BuildCustom" xml:space="preserve"><value>Custom</value></data>
+  <data name="Menu_Tools" xml:space="preserve"><value>Tools</value></data>
+  <data name="Menu_ExcludeFromDefender" xml:space="preserve"><value>Exclude Path From Defender</value></data>
+  <data name="Menu_RemoveProject" xml:space="preserve"><value>Remove from recent list</value></data>
+
+  <!-- ==================== Editors tab ==================== -->
+  <data name="Col_Release" xml:space="preserve"><value>Release</value></data>
+  <data name="Col_Platforms" xml:space="preserve"><value>Platforms</value></data>
+  <data name="Col_Installed" xml:space="preserve"><value>Installed</value></data>
+  <data name="Col_Projects" xml:space="preserve"><value>Projects</value></data>
+  <data name="Col_Released" xml:space="preserve"><value>Released</value></data>
+  <data name="Btn_ReleaseNotes" xml:space="preserve"><value>Release _Notes</value></data>
+  <data name="Btn_CheckUpdates" xml:space="preserve"><value>Check Updates</value></data>
+  <data name="Tip_RefreshInstallations" xml:space="preserve"><value>Refresh installations (F5)</value></data>
+  <data name="Menu_CopyEditorPath" xml:space="preserve"><value>Copy Editor Path</value></data>
+  <data name="Menu_SetPreferred" xml:space="preserve"><value>Set as Preferred Version</value></data>
+  <data name="Menu_OpenReleasesApi" xml:space="preserve"><value>Open in Releases API</value></data>
+  <data name="Menu_Download" xml:space="preserve"><value>Download</value></data>
+  <data name="Menu_DownloadAndroidModule" xml:space="preserve"><value>Download Android module</value></data>
+  <data name="Menu_DownloadIOSModule" xml:space="preserve"><value>Download IOS module</value></data>
+  <data name="Menu_DownloadWebGLModule" xml:space="preserve"><value>Download WebGL module</value></data>
+  <data name="Menu_DownloadLinuxModule" xml:space="preserve"><value>Download Linux modules</value></data>
+  <data name="Menu_DownloadIL2CPPModule" xml:space="preserve"><value>Download IL2CPP module</value></data>
+  <data name="Menu_DownloadWinDedicatedModule" xml:space="preserve"><value>Download Windows Dedicated module</value></data>
+  <data name="Menu_DownloadLinuxDedicatedModule" xml:space="preserve"><value>Download Linux Dedicated module</value></data>
+  <data name="Menu_Uninstall" xml:space="preserve"><value>Uninstall</value></data>
+
+  <!-- ==================== Updates tab ==================== -->
+  <data name="Rdo_All" xml:space="preserve"><value>All</value></data>
+  <data name="Rdo_LTS" xml:space="preserve"><value>LTS</value></data>
+  <data name="Rdo_Tech" xml:space="preserve"><value>Tech</value></data>
+  <data name="Rdo_Alpha" xml:space="preserve"><value>Alpha</value></data>
+  <data name="Rdo_Beta" xml:space="preserve"><value>Beta</value></data>
+  <data name="Tip_FetchReleasedVersions" xml:space="preserve"><value>Fetch released versions</value></data>
+  <data name="Menu_DownloadInBrowser" xml:space="preserve"><value>Download in Browser</value></data>
+  <data name="Menu_CopyDownloadURL" xml:space="preserve"><value>Copy Download URL</value></data>
+  <data name="Menu_OpenReleaseNotes" xml:space="preserve"><value>Open Release Notes</value></data>
+  <data name="Btn_DownloadInstallerBrowser" xml:space="preserve"><value>_Download installer in browser</value></data>
+  <data name="Btn_DownloadEditorBrowser" xml:space="preserve"><value>_Download editor in browser</value></data>
+  <data name="Btn_DownloadInstall" xml:space="preserve"><value>Download &amp; Install</value></data>
+  <data name="Btn_OpenReleaseNotes" xml:space="preserve"><value>Release Notes</value></data>
+  <data name="Btn_CumulativeReleaseNotes" xml:space="preserve"><value>Cumulative Release Notes</value></data>
+  <data name="Tip_CumulativeReleaseNotes" xml:space="preserve"><value>Show all Release Notes between the selected version and the older, closest one installed. Only works for final and patch versions.</value></data>
+
+  <!-- ==================== Tools tab ==================== -->
+  <data name="Lbl_Folders" xml:space="preserve"><value>Folders</value></data>
+  <data name="Btn_EditorLogs" xml:space="preserve"><value>_Editor Logs</value></data>
+  <data name="Tip_EditorLogs" xml:space="preserve"><value>Browse Editor logs folder or Middle click to open editor.log</value></data>
+  <data name="Btn_PlayerLogs" xml:space="preserve"><value>_Player Logs</value></data>
+  <data name="Tip_PlayerLogs" xml:space="preserve"><value>Browse Player logs folder</value></data>
+  <data name="Btn_CrashLogs" xml:space="preserve"><value>_Crash Logs</value></data>
+  <data name="Tip_CrashLogs" xml:space="preserve"><value>Browse Crash logs folder</value></data>
+  <data name="Btn_AssetPackages" xml:space="preserve"><value>A_sset packages</value></data>
+  <data name="Tip_AssetPackages" xml:space="preserve"><value>Browse AssetStore downloads folder</value></data>
+  <data name="Btn_CrashDumps" xml:space="preserve"><value>Crash _Dumps</value></data>
+  <data name="Tip_CrashDumps" xml:space="preserve"><value>Browse Crash dumps folder</value></data>
+  <data name="Btn_UnityCache" xml:space="preserve"><value>_Unity Cache</value></data>
+  <data name="Tip_UnityCache" xml:space="preserve"><value>Browse Unity Cache folder</value></data>
+  <data name="Btn_GICache" xml:space="preserve"><value>_GI Cache</value></data>
+  <data name="Tip_GICache" xml:space="preserve"><value>Browse Unity GI Cache folder</value></data>
+  <data name="Btn_HubLogs" xml:space="preserve"><value>Hub Logs</value></data>
+  <data name="Tip_HubLogs" xml:space="preserve"><value>Browse Unity Hub Logs folder</value></data>
+  <data name="Lbl_Tools" xml:space="preserve"><value>Tools</value></data>
+  <data name="Btn_ADBLogcat" xml:space="preserve"><value>_ADB logcat</value></data>
+  <data name="Tip_ADBLogcat" xml:space="preserve"><value>Start ADB logcat commandline</value></data>
+  <data name="Btn_ExcludeFolders" xml:space="preserve"><value>Exclude Folders*</value></data>
+  <data name="Tip_ExcludeFolders" xml:space="preserve"><value>Exclude all Editor folders from Windows Defender</value></data>
+  <data name="Lbl_Links" xml:space="preserve"><value>Links</value></data>
+  <data name="Btn_Resources" xml:space="preserve"><value>Resources 🔗</value></data>
+  <data name="Tip_Resources" xml:space="preserve"><value>List of resources, cheatsheets, sdk downloads in github page</value></data>
+  <data name="Lbl_BuildReport" xml:space="preserve"><value>Build Report</value></data>
+  <data name="Tip_ClearReport" xml:space="preserve"><value>Clear report</value></data>
+  <data name="Tip_GetLatestReport" xml:space="preserve"><value>Get latest Build Report from Editor.log</value></data>
+  <data name="Tip_PreviousReport" xml:space="preserve"><value>Previous Build Report</value></data>
+  <data name="Tip_NextReport" xml:space="preserve"><value>Next Build Report</value></data>
+  <data name="Col_Size" xml:space="preserve"><value>Size</value></data>
+  <data name="Col_Percent" xml:space="preserve"><value>%</value></data>
+  <data name="Col_Format" xml:space="preserve"><value>Format</value></data>
+  <data name="Col_Type" xml:space="preserve"><value>Type</value></data>
+  <data name="Menu_OpenExplorerHere" xml:space="preserve"><value>Open Explorer here</value></data>
+  <data name="Menu_CopyPathToClipboard" xml:space="preserve"><value>Copy Path to clipboard</value></data>
+  <data name="Lbl_ElapsedTime" xml:space="preserve"><value>Elapsed time:</value></data>
+
+  <!-- ==================== Settings tab ==================== -->
+  <data name="Lbl_UnityInstallFolders" xml:space="preserve"><value>Unity Installation(s) Parent Folder(s)</value></data>
+  <data name="Tip_InstallFolders" xml:space="preserve"><value>Search will try to find Unity installations under these folders</value></data>
+  <data name="Lbl_FoundInstallations" xml:space="preserve"><value>Found {0} Installations</value></data>
+  <data name="Btn_AddFolder" xml:space="preserve"><value>_Add Folder</value></data>
+  <data name="Btn_RemoveFolder" xml:space="preserve"><value>_Remove Folder</value></data>
+  <data name="Grp_Projects" xml:space="preserve"><value>Projects</value></data>
+  <data name="Grp_UI" xml:space="preserve"><value>UI</value></data>
+  <data name="Grp_General" xml:space="preserve"><value>General</value></data>
+  <data name="Grp_System" xml:space="preserve"><value>System</value></data>
+  <data name="Chk_SearchProjectPath" xml:space="preserve"><value>Search project path also</value></data>
+  <data name="Tip_SearchProjectPath" xml:space="preserve"><value>Searches from project folder path and project name</value></data>
+  <data name="Chk_EnableProjectRename" xml:space="preserve"><value>Enable Project title rename (F2)</value></data>
+  <data name="Tip_EnableProjectRename" xml:space="preserve"><value>Renames project title only, DOES NOT rename project folder! New name is saved into ProjectSettings/ProjectName.txt</value></data>
+  <data name="Chk_ShowPlatform" xml:space="preserve"><value>Show current target platform (if exists in .csproj)</value></data>
+  <data name="Tip_ShowPlatform" xml:space="preserve"><value>Shows target platform column</value></data>
+  <data name="Chk_EnablePlatformSelection" xml:space="preserve"><value>Enable Platform Selection (Experimental!)</value></data>
+  <data name="Tip_EnablePlatformSelection" xml:space="preserve"><value>Select target platform</value></data>
+  <data name="Chk_ShowGitBranch" xml:space="preserve"><value>Show git branch</value></data>
+  <data name="Tip_ShowGitBranch" xml:space="preserve"><value>Shows column for project git branch info</value></data>
+  <data name="Chk_SearchParentFolders" xml:space="preserve"><value>Search Parent Folders for branch info</value></data>
+  <data name="Tip_SearchParentFolders" xml:space="preserve"><value>Search parent folders recursively to find current branch</value></data>
+  <data name="Chk_CheckPlasticBranch" xml:space="preserve"><value>Check Plastic branch</value></data>
+  <data name="Tip_CheckPlasticBranch" xml:space="preserve"><value>Checks for plastic branch, if .git doesnt exists</value></data>
+  <data name="Chk_AskNameForQuickProject" xml:space="preserve"><value>Ask name for New Project</value></data>
+  <data name="Tip_AskNameForQuickProject" xml:space="preserve"><value>If disabled, uses automatic quick project naming (Should be enabled, unless you want instant project creation)</value></data>
+  <data name="Chk_ShowSRP" xml:space="preserve"><value>Show SRP column</value></data>
+  <data name="Tip_ShowSRP" xml:space="preserve"><value>Display Scriptable Render Pipeline column</value></data>
+  <data name="Chk_ShowMissingFolderProjects" xml:space="preserve"><value>Show projects that don't exist on disk</value></data>
+  <data name="Tip_ShowMissingFolderProjects" xml:space="preserve"><value>List in recent projects, even if the project folder is missing</value></data>
+  <data name="Btn_PurgeList" xml:space="preserve"><value>Purge list</value></data>
+  <data name="Tip_PurgeList" xml:space="preserve"><value>Cleanup projects with missing project folder from the recent list (in settings data)</value></data>
+  <data name="Chk_ShowArgumentsColumn" xml:space="preserve"><value>Show commandline arguments column</value></data>
+  <data name="Tip_ShowArgumentsColumn" xml:space="preserve"><value>Shows column for custom project commandline params</value></data>
+  <data name="Lbl_ProjectName" xml:space="preserve"><value>Project name:</value></data>
+  <data name="Rdo_ProjNameFolder" xml:space="preserve"><value>ProjectName.txt or Folder</value></data>
+  <data name="Tip_ProjNameFolder" xml:space="preserve"><value>Take project name from project folder name OR ProjectName.txt if file exists in ProjectSettings/ folder</value></data>
+  <data name="Rdo_ProjNameProductName" xml:space="preserve"><value>Settings ProductName</value></data>
+  <data name="Tip_ProjNameProductName" xml:space="preserve"><value>Take project name from player settings ProductName field</value></data>
+  <data name="Chk_OverrideProjectCount" xml:space="preserve"><value>Maximum recent projects count</value></data>
+  <data name="Tip_OverrideProjectCount" xml:space="preserve"><value>(Experimental) Save all recent projects to preferences and merge into recent list</value></data>
+  <data name="Lbl_Experimental" xml:space="preserve"><value>(Experimental!)</value></data>
+  <data name="Tip_MaxProjectCount" xml:space="preserve"><value>40 projects come from Unity registry, rest are added and taken from preferences data</value></data>
+  <data name="Chk_UseInitScript" xml:space="preserve"><value>Use Init script for new projects</value></data>
+  <data name="Tip_UseInitScript" xml:space="preserve"><value>Runs editor script on new project (to do custom setup)</value></data>
+  <data name="Tip_CustomInitFileURL" xml:space="preserve"><value>URL OR local folder to fetch init file from (NOTE: Not automatically fetched, only if press Fetch button)</value></data>
+  <data name="Btn_ExploreScriptsFolder" xml:space="preserve"><value>...</value></data>
+  <data name="Tip_ExploreScriptsFolder" xml:space="preserve"><value>Explore Scripts folder</value></data>
+  <data name="Btn_Fetch" xml:space="preserve"><value>Fetch</value></data>
+  <data name="Tip_FetchInitScript" xml:space="preserve"><value>Copies latest script from this location (Renames existing script as *.bak)</value></data>
+  <data name="Lbl_RootFolderForNewProjects" xml:space="preserve"><value>Root Folder for New Projects</value></data>
+  <data name="Tip_RootFolderForNewProjects" xml:space="preserve"><value>Root folder for quick New Projects (so that you dont have to pick project folder every time)</value></data>
+  <data name="Btn_BrowseProjectRootFolder" xml:space="preserve"><value>...</value></data>
+  <data name="Tip_BrowseProjectRootFolder" xml:space="preserve"><value>Browse for new projects root folder..</value></data>
+  <data name="Lbl_WebglRelativePath" xml:space="preserve"><value>Webgl Relative Build Path (inside Builds/)</value></data>
+  <data name="Tip_WebglRelativePath" xml:space="preserve"><value>Inside Builds/ folder you might have separate folder for webgl builds, like webgl/. Used for starting WebGL server there</value></data>
+  <data name="Chk_HumanFriendlyDateTime" xml:space="preserve"><value>Use human friendly Last Modified</value></data>
+  <data name="Tip_HumanFriendlyDateTime" xml:space="preserve"><value>Last modified date format</value></data>
+  <data name="Chk_UseCustomLastModified" xml:space="preserve"><value>Date format</value></data>
+  <data name="Tip_CustomDateFormat" xml:space="preserve"><value>Last modified date format</value></data>
+  <data name="Tip_DefaultDateFormat" xml:space="preserve"><value>Default is dd/MM/yyyy HH:mm:ss</value></data>
+  <data name="Chk_UseCustomTheme" xml:space="preserve"><value>Load custom theme</value></data>
+  <data name="Tip_UseCustomTheme" xml:space="preserve"><value>Loads theme.ini from application folder</value></data>
+  <data name="Tip_CustomThemeFile" xml:space="preserve"><value>Default is theme.ini</value></data>
+  <data name="Tip_ReloadTheme" xml:space="preserve"><value>Reload theme</value></data>
+  <data name="Tip_ExploreThemesFolder" xml:space="preserve"><value>Explore Themes folder</value></data>
+  <data name="Tip_ThemeEditor" xml:space="preserve"><value>Open theme editor</value></data>
+  <data name="Chk_MinimizeToTaskbar" xml:space="preserve"><value>Minimize to tray</value></data>
+  <data name="Tip_MinimizeToTaskbar" xml:space="preserve"><value>When minimized, hides application into taskbar icon area</value></data>
+  <data name="Chk_QuitAfterOpen" xml:space="preserve"><value>Close after opening project</value></data>
+  <data name="Tip_QuitAfterOpen" xml:space="preserve"><value>Closes launcher after running project (not really useful)</value></data>
+  <data name="Chk_QuitAfterCommandline" xml:space="preserve"><value>Close after launching from Explorer</value></data>
+  <data name="Tip_QuitAfterCommandline" xml:space="preserve"><value>Close launcher after running from commandline or Explorer (recommended)</value></data>
+  <data name="Chk_AllowSingleInstanceOnly" xml:space="preserve"><value>Allow single instance only</value></data>
+  <data name="Tip_AllowSingleInstanceOnly" xml:space="preserve"><value>Activates already running instance, instead of starting new exe (not working if app is minized to taskbar)</value></data>
+  <data name="Chk_UseAlphaReleaseNotes" xml:space="preserve"><value>Use Unity Alpha Release Notes Site (only for final versions) </value></data>
+  <data name="Tip_UseAlphaReleaseNotes" xml:space="preserve"><value>Use the superior (but alpha) Unity Release Notes (https://alpha.release-notes.ds.unity3d.com/) site when clicking on the ReleaseNotes button. Otherwise will default to the normal build page.</value></data>
+  <data name="Chk_UseUnofficialReleaseList" xml:space="preserve"><value>Use Unofficial Release Watch List (for latest downloads)</value></data>
+  <data name="Tip_UseUnofficialReleaseList" xml:space="preserve"><value>Checks latest releases from https://github.com/unitycoder/UnofficialUnityReleasesWatcher (if not yet available in The Unity Releases API)</value></data>
+  <data name="Chk_DisableUnityHubLaunch" xml:space="preserve"><value>Disable UnityHub launch at Editor start</value></data>
+  <data name="Tip_DisableUnityHubLaunch" xml:space="preserve"><value>Overrides UnityHub IPC port. Note: You will be logged out in Editor!</value></data>
+  <data name="Chk_FetchAdditionalInfo" xml:space="preserve"><value>Fetch additional info about Editor</value></data>
+  <data name="Tip_FetchAdditionalInfo" xml:space="preserve"><value>Reads releases API for security related info</value></data>
+  <data name="Chk_FetchOnlineTemplates" xml:space="preserve"><value>New Project window: Fetch online templates</value></data>
+  <data name="Tip_FetchOnlineTemplates" xml:space="preserve"><value>Automatically fetch template list from Unity servers</value></data>
+  <data name="Chk_StreamerMode" xml:space="preserve"><value>Streamer Mode (hide project names and folders)</value></data>
+  <data name="Tip_StreamerMode" xml:space="preserve"><value>Hide project names and folders in main view</value></data>
+  <data name="Chk_ShowRecoveredScenePopup" xml:space="preserve"><value>Show popup for recovered scene after editor crash</value></data>
+  <data name="Tip_ShowRecoveredScenePopup" xml:space="preserve"><value>After editor crash, show a popup to load recovered scene (or delete it)</value></data>
+  <data name="Chk_RegisterExplorerMenu" xml:space="preserve"><value>Register Explorer context menu</value></data>
+  <data name="Tip_RegisterExplorerMenu" xml:space="preserve"><value>Add registry entry for Explorer context menu</value></data>
+  <data name="Chk_RegisterInstallAPKMenu" xml:space="preserve"><value>Register 'Install APK' Explorer context menu</value></data>
+  <data name="Tip_RegisterInstallAPKMenu" xml:space="preserve"><value>Add registry entry for Explorer 'Install APK' context menu</value></data>
+  <data name="Chk_RunAutomatically" xml:space="preserve"><value>Run automatically on startup</value></data>
+  <data name="Tip_RunAutomatically" xml:space="preserve"><value>Run automatically using startup registry key</value></data>
+  <data name="Chk_RunAutomaticallyMinimized" xml:space="preserve"><value>as minimized</value></data>
+  <data name="Tip_RunAutomaticallyMinimized" xml:space="preserve"><value>Minimize to tray when started automatically</value></data>
+  <data name="Lbl_WebglPort" xml:space="preserve"><value>Initial WebGL server port</value></data>
+  <data name="Tip_WebglPort" xml:space="preserve"><value>Initial port for first local WebGL webserver process (next one will be +1)</value></data>
+  <data name="Lbl_ShortcutBatchFolder" xml:space="preserve"><value>Shortcut .bat files folder</value></data>
+  <data name="Tip_ShortcutBatchFolder" xml:space="preserve"><value>Save generated .bat files here (they are run from Desktop Shortcut)</value></data>
+  <data name="Btn_BrowseBatchFileFolder" xml:space="preserve"><value>...</value></data>
+  <data name="Tip_BrowseBatchFileFolder" xml:space="preserve"><value>Browse for .bat folder (default location is inside AppData/UnityLauncherPro/ and works fine, so this is optional)</value></data>
+  <data name="Lbl_ADBArgs" xml:space="preserve"><value>ADB args:</value></data>
+  <data name="Tip_ADBArgs" xml:space="preserve"><value>ADB commandline arguments</value></data>
+  <data name="Btn_Reset" xml:space="preserve"><value>Reset</value></data>
+  <data name="Tip_ResetLogCatArgs" xml:space="preserve"><value>Reset to default logcat args</value></data>
+  <data name="Btn_PatchHubConfig" xml:space="preserve"><value>Patch Hub editors.json</value></data>
+  <data name="Tip_PatchHubConfig" xml:space="preserve"><value>Modifies json file to set 'manual:true' values into 'false', so that can add modules using Hub. NOTE: This cannot be reversed (not keeping track which values were already 'false')</value></data>
+  <data name="Lbl_IfWantModules" xml:space="preserve"><value>*If want to install modules from Hub</value></data>
+  <data name="Btn_ViewInGithub" xml:space="preserve"><value>View in Github</value></data>
+  <data name="Lbl_Language" xml:space="preserve"><value>Language</value></data>
+  <data name="Tip_Language" xml:space="preserve"><value>Application display language (requires restart for some changes to take effect)</value></data>
+  <data name="Btn_RestartRequired" xml:space="preserve"><value>(restart required for full effect)</value></data>
+
+  <!-- ==================== NewProject window ==================== -->
+  <data name="Title_NewProject" xml:space="preserve"><value>Create New Project</value></data>
+  <data name="Lbl_UnityVersion" xml:space="preserve"><value>Unity Version</value></data>
+  <data name="Lbl_ProjectNameLabel" xml:space="preserve"><value>Project Name:</value></data>
+  <data name="Lbl_PlatformLabel" xml:space="preserve"><value>Platform:</value></data>
+  <data name="Lbl_Templates" xml:space="preserve"><value>Templates:</value></data>
+  <data name="Lbl_Override" xml:space="preserve"><value>Override</value></data>
+  <data name="Chk_DX11" xml:space="preserve"><value>DX11</value></data>
+  <data name="Tip_DX11" xml:space="preserve"><value>Use DX11 instead of DX12</value></data>
+  <data name="Lbl_ProjectRootFolder" xml:space="preserve"><value>Project Root Folder:</value></data>
+  <data name="Tip_BrowseNewProjectFolder" xml:space="preserve"><value>Browse for New Project folder</value></data>
+  <data name="Tip_CreateMissingFolder" xml:space="preserve"><value>Create Missing Folder from your path</value></data>
+  <data name="Btn_Cancel" xml:space="preserve"><value>_Cancel</value></data>
+  <data name="Btn_NewProjectRepo" xml:space="preserve"><value>New Project+_Repo</value></data>
+  <data name="Btn_NewProject2" xml:space="preserve"><value>_New Project</value></data>
+  <data name="Exp_VersionControl" xml:space="preserve"><value>Version Control (Github)</value></data>
+  <data name="Lbl_ConnectedAs" xml:space="preserve"><value>Connected as:</value></data>
+  <data name="Lbl_NotConnected" xml:space="preserve"><value>(not connected)</value></data>
+  <data name="Btn_GetToken" xml:space="preserve"><value>Get Token 🔗</value></data>
+  <data name="Tip_GetToken" xml:space="preserve"><value>Open Github to create a token</value></data>
+  <data name="Tip_EnterGithubToken" xml:space="preserve"><value>Enter your Github token here</value></data>
+  <data name="Btn_Authorize" xml:space="preserve"><value>Authorize</value></data>
+  <data name="Btn_Disconnect" xml:space="preserve"><value>Disconnect</value></data>
+  <data name="Tip_Disconnect" xml:space="preserve"><value>Disconnect from Github AND delete saved token</value></data>
+  <data name="Chk_EnableVersionControl" xml:space="preserve"><value>Enable Version Control</value></data>
+  <data name="Lbl_Visibility" xml:space="preserve"><value>Visibility:</value></data>
+  <data name="Rdo_Private" xml:space="preserve"><value>Private</value></data>
+  <data name="Rdo_Public" xml:space="preserve"><value>Public</value></data>
+  <data name="Chk_Organization" xml:space="preserve"><value>Organization:</value></data>
+  <data name="Tip_Organization" xml:space="preserve"><value>Enable Large File Storage and add .gitattributes</value></data>
+  <data name="Lbl_RepoName" xml:space="preserve"><value>Repository Name:</value></data>
+  <data name="Lbl_Description" xml:space="preserve"><value>Description:</value></data>
+  <data name="Chk_EnableLFS" xml:space="preserve"><value>Enable Git LFS </value></data>
+  <data name="Tip_EnableLFS" xml:space="preserve"><value>Enable Large File Storage and add .gitattributes</value></data>
+  <data name="Chk_InitialCommit" xml:space="preserve"><value>Create initial commit</value></data>
+  <data name="Chk_AddUnityGitIgnore" xml:space="preserve"><value>Add Unity .gitignore</value></data>
+  <data name="Chk_AddReadme" xml:space="preserve"><value>Add README</value></data>
+  <data name="Tip_AddReadme" xml:space="preserve"><value>Add a README file</value></data>
+  <data name="Lbl_OnlineTemplates" xml:space="preserve"><value>Online Templates</value></data>
+  <data name="Tip_FetchTemplates" xml:space="preserve"><value>Fetch list of templates</value></data>
+  <data name="Tip_DownloadTemplate" xml:space="preserve"><value>Download Template</value></data>
+  <data name="Tip_AlreadyDownloaded" xml:space="preserve"><value>Already downloaded</value></data>
+  <data name="Lbl_None" xml:space="preserve"><value>None</value></data>
+  <data name="Lbl_CreateProject" xml:space="preserve"><value>Create Project</value></data>
+  <data name="Btn_DownloadTemplateFirst" xml:space="preserve"><value>Download Template First &gt;</value></data>
+  <data name="Lbl_TemplatesCount" xml:space="preserve"><value>Templates: ({0})</value></data>
+
+  <!-- NewProject status messages -->
+  <data name="Status_NoUnityForNewProject" xml:space="preserve"><value>No Unity installations found! Please add Unity installations first.</value></data>
+  <data name="Status_GitInitialized" xml:space="preserve"><value>Git repository initialized at: {0}</value></data>
+  <data name="Status_GitInitFailed" xml:space="preserve"><value>Git init failed: {0}</value></data>
+  <data name="Status_GithubFailed" xml:space="preserve"><value>GitHub repo creation failed: {0}</value></data>
+  <data name="Status_FolderNotExist" xml:space="preserve"><value>Folder does not exist.</value></data>
+  <data name="Status_NameEmptyOrExists" xml:space="preserve"><value>Project name is empty or already exists.</value></data>
+  <data name="Status_TemplateNotDownloaded" xml:space="preserve"><value>Selected online template is not downloaded.</value></data>
+  <data name="Status_GitAlreadyExists" xml:space="preserve"><value>Git repository already exists in the project folder.</value></data>
+  <data name="Status_NameSpaceWarning" xml:space="preserve"><value>Warning: Project name starts or ends with SPACE character</value></data>
+  <data name="Status_ValidatingToken" xml:space="preserve"><value>Validating token...</value></data>
+  <data name="Status_TokenValid" xml:space="preserve"><value>Token valid. Logged in as {0}.</value></data>
+  <data name="Status_UnknownGithubError" xml:space="preserve"><value>Unknown GitHub error.</value></data>
+
+  <!-- ==================== ProjectProperties window ==================== -->
+  <data name="Title_ProjectProperties" xml:space="preserve"><value>Project Properties</value></data>
+  <data name="Lbl_EnvVariables" xml:space="preserve"><value>Custom environment variables:</value></data>
+  <data name="Btn_Apply" xml:space="preserve"><value>Apply</value></data>
+  <data name="Btn_CancelShort" xml:space="preserve"><value>Cancel</value></data>
+
+  <!-- ==================== DownloadProgressWindow ==================== -->
+  <data name="Title_DownloadProgress" xml:space="preserve"><value>Download Progress</value></data>
+  <data name="Btn_CancelDownload" xml:space="preserve"><value>Cancel</value></data>
+
+  <!-- ==================== UpgradeWindow ==================== -->
+  <data name="Title_UpgradeProject" xml:space="preserve"><value>Upgrade Project Version</value></data>
+  <data name="Lbl_ProjectVersion" xml:space="preserve"><value>Project version:</value></data>
+  <data name="Lbl_Platform2" xml:space="preserve"><value>Platform:</value></data>
+  <data name="Lbl_AvailableVersions" xml:space="preserve"><value>Available Unity Versions</value></data>
+  <data name="Btn_ReleaseNotes3" xml:space="preserve"><value>_Release Notes</value></data>
+  <data name="Tip_OpenReleasePage" xml:space="preserve"><value>Open Release Notes Page in Browser</value></data>
+  <data name="Btn_DownloadInBrowser" xml:space="preserve"><value>Download in _Browser</value></data>
+  <data name="Btn_DownloadEditorInBrowser" xml:space="preserve"><value>Download Editor in _Browser</value></data>
+  <data name="Btn_DownloadInstall2" xml:space="preserve"><value>_Download &amp; Install</value></data>
+  <data name="Tip_DownloadInstall" xml:space="preserve"><value>Downloads Unity web installer into Temp folder and runs it (Root folder path is copied to clipboard)</value></data>
+  <data name="Btn_CancelUpgrade" xml:space="preserve"><value>_Cancel</value></data>
+  <data name="Btn_UpgradeProject" xml:space="preserve"><value>_Upgrade Project</value></data>
+  <data name="Tip_UpgradeProject" xml:space="preserve"><value>Launch with selected Unity version</value></data>
+
+  <!-- ==================== ThemeEditor ==================== -->
+  <data name="Col_Key" xml:space="preserve"><value>Key</value></data>
+  <data name="Col_Value" xml:space="preserve"><value>Value</value></data>
+  <data name="Lbl_Red" xml:space="preserve"><value>Red</value></data>
+  <data name="Lbl_Green" xml:space="preserve"><value>Green</value></data>
+  <data name="Lbl_Blue" xml:space="preserve"><value>Blue</value></data>
+  <data name="Lbl_Alpha" xml:space="preserve"><value>Alpha</value></data>
+  <data name="Btn_ResetTheme" xml:space="preserve"><value>Reset Theme</value></data>
+  <data name="Btn_SaveTheme" xml:space="preserve"><value>Save Theme</value></data>
+  <data name="Tip_CurrentColor" xml:space="preserve"><value>Current color</value></data>
+
+  <!-- ==================== SearchBox ==================== -->
+  <data name="Search_Placeholder" xml:space="preserve"><value>Search</value></data>
+
+  <!-- ==================== C# message boxes / status ==================== -->
+  <data name="Msg_NoUnityInstalled" xml:space="preserve"><value>No Unity installations found. Please setup Unity Editor root folders first by running UnityLauncherPro and opening Settings tab.</value></data>
+  <data name="Msg_CorruptSettingsBody" xml:space="preserve"><value>This may be due to a Windows crash/BSOD.
+Click 'Yes' to use automatic backup (if exists, otherwise settings are reset), then start application again.
+
+Click 'No' to reset config file (you'll need to setup settings again)
+
+Click 'Cancel' to exit now (and delete user.config manually)
+
+Corrupted file: {0}</value></data>
+  <data name="Msg_CorruptSettingsTitle" xml:space="preserve"><value>{0} - Corrupt user settings</value></data>
+  <data name="Msg_RemoveProjectBody" xml:space="preserve"><value>Are you sure you want to remove project from list?
+
+{0}</value></data>
+  <data name="Msg_RemoveProjectTitle" xml:space="preserve"><value>Remove project</value></data>
+  <data name="Msg_PatchHubConfigBody" xml:space="preserve"><value>This will modify current {0} file. Are you sure you want to continue? (This cannot be undone, we dont know which values were already false)</value></data>
+  <data name="Msg_PatchHubConfigTitle" xml:space="preserve"><value>Patch hub config</value></data>
+  <data name="Msg_NoUnityVersionsInstalled" xml:space="preserve"><value>No Unity versions installed. Please run {0} first to setup root folders.</value></data>
+  <data name="Msg_SceneRecoveryBody" xml:space="preserve"><value>Crash recovery scene found, do you want to MOVE it into Assets/_Recovery/-folder?</value></data>
+  <data name="Msg_SceneRecoveryTitle" xml:space="preserve"><value>UnityLauncherPro - Scene Recovery</value></data>
+  <data name="Msg_CancelledPrivileges" xml:space="preserve"><value>Operation cancelled or failed due to insufficient privileges.</value></data>
+  <data name="Msg_CancelledTitle" xml:space="preserve"><value>Cancelled</value></data>
+  <data name="Msg_ErrorPrefix" xml:space="preserve"><value>Error: {0}</value></data>
+  <data name="Msg_ErrorTitle" xml:space="preserve"><value>Error</value></data>
+  <data name="Msg_FailedOpenURL" xml:space="preserve"><value>Failed to open URL: {0}</value></data>
+  <data name="Msg_InformationTitle" xml:space="preserve"><value>Information</value></data>
+  <data name="Msg_WarningTitle" xml:space="preserve"><value>Warning</value></data>
+  <data name="Msg_LanguageRestartTitle" xml:space="preserve"><value>Language Changed</value></data>
+  <data name="Msg_LanguageRestartBody" xml:space="preserve"><value>Language has been changed. Please restart the application for all changes to take effect.</value></data>
+  <data name="Menu_CheckUpdates" xml:space="preserve"><value>Check Updates</value></data>
+  <data name="Tip_Builds" xml:space="preserve"><value>Builds</value></data>
+
 </root>

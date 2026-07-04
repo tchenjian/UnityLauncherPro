@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +20,7 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using UnityLauncherPro.Data;
 using UnityLauncherPro.Helpers;
+using UnityLauncherPro.Localization;
 using UnityLauncherPro.Properties;
 
 namespace UnityLauncherPro
@@ -281,7 +282,7 @@ namespace UnityLauncherPro
                 // if no editors installed, show message
                 if (MainWindow.unityInstallationsSource.Count == 0)
                 {
-                    MessageBox.Show($"No Unity versions installed. Please run {MainWindow.appName} first to setup root folders.", MainWindow.appName, MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show(string.Format(LocalizationManager.Instance["Msg_NoUnityVersionsInstalled"], MainWindow.appName), MainWindow.appName, MessageBoxButton.OK, MessageBoxImage.Warning);
                     return null;
                 }
 
@@ -414,7 +415,7 @@ namespace UnityLauncherPro
             {
                 if (Settings.Default.showRecoveredScenePopup)
                 {
-                    var result = MessageBox.Show("Crash recovery scene found, do you want to MOVE it into Assets/_Recovery/-folder?", "UnityLauncherPro - Scene Recovery", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    var result = MessageBox.Show(LocalizationManager.Instance["Msg_SceneRecoveryBody"], LocalizationManager.Instance["Msg_SceneRecoveryTitle"], MessageBoxButton.YesNo, MessageBoxImage.Question);
                     if (result == MessageBoxResult.Yes)
                     {
                         var restoreFolder = Path.Combine(projectPath, "Assets", "_Recovery");
@@ -2990,13 +2991,13 @@ public static class UnityLauncherProTools
             {
                 if (!silent)
                 {
-                    MessageBox.Show("Operation cancelled or failed due to insufficient privileges.", "Cancelled", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show(LocalizationManager.Instance["Msg_CancelledPrivileges"], LocalizationManager.Instance["Msg_CancelledTitle"], MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
                 return false;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(string.Format(LocalizationManager.Instance["Msg_ErrorPrefix"], ex.Message), LocalizationManager.Instance["Msg_ErrorTitle"], MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
             }
 
@@ -3261,7 +3262,7 @@ public static class UnityLauncherProTools
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Failed to open URL: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(string.Format(LocalizationManager.Instance["Msg_FailedOpenURL"], ex.Message), LocalizationManager.Instance["Msg_ErrorTitle"], MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

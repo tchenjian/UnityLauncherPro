@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using UnityLauncherPro.Data;
 using UnityLauncherPro.Helpers;
+using UnityLauncherPro.Localization;
 using UnityLauncherPro.Properties;
 
 namespace UnityLauncherPro
@@ -72,11 +73,11 @@ namespace UnityLauncherPro
 
             if (MainWindow.unityInstallationsSource.Count == 0)
             {
-                Tools.SetStatus("No Unity installations found! Please add Unity installations first.");
+                Tools.SetStatus(LocalizationManager.Instance["Status_NoUnityForNewProject"]);
                 isInitializing = false;
                 btnCreateNewProject.IsEnabled = false;
                 btnCreateNewProjectAndRepo.IsEnabled = false;
-                txtNewProjectStatus.Text = "No Unity installations found! Please add Unity installations first.";
+                txtNewProjectStatus.Text = LocalizationManager.Instance["Status_NoUnityForNewProject"];
                 return;
             }
 
@@ -314,11 +315,11 @@ namespace UnityLauncherPro
                     {
                         string projectPath = await GithubActions.InitRepositoryAsync(baseDir: txtNewProjectFolder.Text, projectName: txtNewProjectName.Text, initGitLfs: (chkEnableLfs.IsChecked == true), defaultBranch: "main");
 
-                        txtNewProjectStatus.Text = "Git repository initialized at: " + projectPath;
+                        txtNewProjectStatus.Text = string.Format(LocalizationManager.Instance["Status_GitInitialized"], projectPath);
                     }
                     catch (Exception ex)
                     {
-                        txtNewProjectStatus.Text = "Git init failed: " + ex.Message;
+                        txtNewProjectStatus.Text = string.Format(LocalizationManager.Instance["Status_GitInitFailed"], ex.Message);
                     }
 
                     // create online repo
@@ -353,7 +354,7 @@ namespace UnityLauncherPro
                         else
                         {
                             Console.WriteLine("Failed to create repo..");
-                            txtNewProjectStatus.Text = "GitHub repo creation failed: " + (string.IsNullOrWhiteSpace(result.Error) ? "Unknown GitHub error." : result.Error);
+                            txtNewProjectStatus.Text = string.Format(LocalizationManager.Instance["Status_GithubFailed"], string.IsNullOrWhiteSpace(result.Error) ? LocalizationManager.Instance["Status_UnknownGithubError"] : result.Error);
                         }
                     }
                     catch (Exception ex)
@@ -475,10 +476,10 @@ namespace UnityLauncherPro
             btnCreateNewProject.IsEnabled = folderExists && projectNameAvailable && onlineTemplateReady && !isCreatingProject;
             btnCreateNewProjectAndRepo.IsEnabled = btnCreateNewProject.IsEnabled && versionControlEnabled && !gitFolderExists;
 
-            if (folderExists == false) txtNewProjectStatus.Text = "Folder does not exist.";
-            if (projectNameAvailable == false && txtNewProjectName.IsEnabled == true) txtNewProjectStatus.Text = "Project name is empty or already exists.";
-            if (onlineTemplateReady == false) txtNewProjectStatus.Text = "Selected online template is not downloaded.";
-            if (gitFolderExists == true) txtNewProjectStatus.Text = "Git repository already exists in the project folder.";
+            if (folderExists == false) txtNewProjectStatus.Text = LocalizationManager.Instance["Status_FolderNotExist"];
+            if (projectNameAvailable == false && txtNewProjectName.IsEnabled == true) txtNewProjectStatus.Text = LocalizationManager.Instance["Status_NameEmptyOrExists"];
+            if (onlineTemplateReady == false) txtNewProjectStatus.Text = LocalizationManager.Instance["Status_TemplateNotDownloaded"];
+            if (gitFolderExists == true) txtNewProjectStatus.Text = LocalizationManager.Instance["Status_GitAlreadyExists"];
         }
 
 
@@ -559,7 +560,7 @@ namespace UnityLauncherPro
             {
                 // NOTE txtbox outline didnt work
                 txtNewProjectName.Background = Brushes.Yellow;
-                txtNewProjectStatus.Text = "Warning: Project name starts or ends with SPACE character";
+                txtNewProjectStatus.Text = LocalizationManager.Instance["Status_NameSpaceWarning"];
                 txtNewProjectStatus.Foreground = Brushes.Orange;
             }
             else
@@ -1023,18 +1024,18 @@ namespace UnityLauncherPro
                 cmbNewProjectTemplate.IsEnabled = false;
                 cmbNewProjectTemplate.SelectedIndex = 0; // Reset to default
 
-                btnCreateNewProject.Content = selectedTemplate.IsDownloaded ? "Create Project" : "Download Template First >";
+                btnCreateNewProject.Content = selectedTemplate.IsDownloaded ? LocalizationManager.Instance["Lbl_CreateProject"] : LocalizationManager.Instance["Btn_DownloadTemplateFirst"];
             }
             else
             {
-                lblSelectedTemplate.Content = "None";
+                lblSelectedTemplate.Content = LocalizationManager.Instance["Lbl_None"];
                 lblSelectedTemplate.BorderThickness = new Thickness(0);
 
                 // Re-enable built-in template dropdown when no online template is selected
                 cmbNewProjectTemplate.IsEnabled = true;
 
                 // enable create button
-                btnCreateNewProject.Content = "Create Project";
+                btnCreateNewProject.Content = LocalizationManager.Instance["Lbl_CreateProject"];
             }
 
             UpdateCreateButtonsEnabledState();
@@ -1183,7 +1184,7 @@ namespace UnityLauncherPro
             btnAuthorizeToken.IsEnabled = false;
             btnDisconnectToken.IsEnabled = true;
 
-            txtNewProjectStatus.Text = "Validating token...";
+            txtNewProjectStatus.Text = LocalizationManager.Instance["Status_ValidatingToken"];
 
             lblConnected.Visibility = Visibility.Collapsed;
             lblNotConnected.Visibility = Visibility.Visible;
@@ -1195,7 +1196,7 @@ namespace UnityLauncherPro
                 if (result.IsValid)
                 {
                     GitHubTokenStore.SaveToken(token, result.Login);
-                    txtNewProjectStatus.Text = "Token valid. Logged in as " + result.Login + ".";
+                    txtNewProjectStatus.Text = string.Format(LocalizationManager.Instance["Status_TokenValid"], result.Login);
                     lblGithubUsername.Content = result.Login;
                     ShowGitAuthorizedUI(true);
                     await LoadGithubOrgsAsync(token);

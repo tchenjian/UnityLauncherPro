@@ -4,11 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UnityLauncherPro"
+        xmlns:loc="clr-namespace:UnityLauncherPro.Localization"
         mc:Ignorable="d" x:Class="UnityLauncherPro.Controls.SearchBoxControl"
         Height="20" Width="222" Background="{DynamicResource ThemeTextBoxBackground}">
     <Grid>
         <!-- Placeholder text -->
-        <TextBlock Margin="3,2" MinWidth="100" Text="Search" Foreground="{DynamicResource ThemeSearchPlaceholder}" Height="24">
+        <TextBlock Margin="3,2" MinWidth="100" Text="{loc:Loc Search_Placeholder}" Foreground="{DynamicResource ThemeSearchPlaceholder}" Height="24">
             <TextBlock.Style>
                 <Style TargetType="TextBlock">
                     <Setter Property="Visibility" Value="Collapsed" />

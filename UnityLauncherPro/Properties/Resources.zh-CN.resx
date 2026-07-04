@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- ==================== 应用 / 状态栏 ==================== -->
+  <data name="App_Title" xml:space="preserve"><value>UnityLauncherPro</value></data>
+  <data name="Status_Ready" xml:space="preserve"><value>就绪</value></data>
+  <data name="Build_Prefix" xml:space="preserve"><value>构建： </value></data>
+
+  <!-- ==================== 选项卡 ==================== -->
+  <data name="Tab_Projects" xml:space="preserve"><value>项目</value></data>
+  <data name="Tab_Editors" xml:space="preserve"><value>编辑器</value></data>
+  <data name="Tab_Updates" xml:space="preserve"><value>更新</value></data>
+  <data name="Tab_Tools" xml:space="preserve"><value>工具</value></data>
+  <data name="Tab_Settings" xml:space="preserve"><value>设置</value></data>
+
+  <!-- ==================== 项目选项卡 ==================== -->
+  <data name="Btn_AddProject" xml:space="preserve"><value>添加项目..</value></data>
+  <data name="Tip_AddProject" xml:space="preserve"><value>浏览并添加现有项目到列表</value></data>
+  <data name="Tip_Refresh" xml:space="preserve"><value>刷新列表 (F5)</value></data>
+  <data name="Col_Project" xml:space="preserve"><value>项目</value></data>
+  <data name="Col_Version" xml:space="preserve"><value>版本</value></data>
+  <data name="Col_Path" xml:space="preserve"><value>路径</value></data>
+  <data name="Col_Modified" xml:space="preserve"><value>修改时间</value></data>
+  <data name="Col_Arguments" xml:space="preserve"><value>参数</value></data>
+  <data name="Col_Branch" xml:space="preserve"><value>分支</value></data>
+  <data name="Col_Platform" xml:space="preserve"><value>平台</value></data>
+  <data name="Col_SRP" xml:space="preserve"><value>SRP</value></data>
+  <data name="Btn_Upgrade" xml:space="preserve"><value>升级(_U)</value></data>
+  <data name="Btn_NewProject" xml:space="preserve"><value>新建项目(_N)</value></data>
+  <data name="Btn_RunUnity" xml:space="preserve"><value>运行 Unity(_R)</value></data>
+  <data name="Btn_OpenProject" xml:space="preserve"><value>打开项目(_O)</value></data>
+  <data name="Btn_Explore" xml:space="preserve"><value>浏览(_E)</value></data>
+  <data name="Tip_WithSelectedUnity" xml:space="preserve"><value>使用所选 Unity</value></data>
+
+  <!-- 项目右键菜单 -->
+  <data name="Menu_CopyVersion" xml:space="preserve"><value>复制 Unity 版本</value></data>
+  <data name="Menu_CopyPath" xml:space="preserve"><value>复制项目路径</value></data>
+  <data name="Menu_ShowInExplorer" xml:space="preserve"><value>在资源管理器中显示</value></data>
+  <data name="Menu_OpenPersistentDataPath" xml:space="preserve"><value>打开 PersistentDataPath</value></data>
+  <data name="Menu_CreateShortcut" xml:space="preserve"><value>在桌面创建快捷方式</value></data>
+  <data name="Menu_OpenEditorLog" xml:space="preserve"><value>打开 Editor.Log</value></data>
+  <data name="Menu_KillProcess" xml:space="preserve"><value>结束进程</value></data>
+  <data name="Menu_StartWebGLServer" xml:space="preserve"><value>启动 WebGL 服务器</value></data>
+  <data name="Menu_InstallAPK" xml:space="preserve"><value>安装并运行最新 APK</value></data>
+  <data name="Menu_Build" xml:space="preserve"><value>构建</value></data>
+  <data name="Menu_BuildAndroid" xml:space="preserve"><value>Android</value></data>
+  <data name="Menu_BuildIOS" xml:space="preserve"><value>IOS</value></data>
+  <data name="Menu_BuildCustom" xml:space="preserve"><value>自定义</value></data>
+  <data name="Menu_Tools" xml:space="preserve"><value>工具</value></data>
+  <data name="Menu_ExcludeFromDefender" xml:space="preserve"><value>从 Defender 排除路径</value></data>
+  <data name="Menu_RemoveProject" xml:space="preserve"><value>从最近列表中移除</value></data>
+
+  <!-- ==================== 编辑器选项卡 ==================== -->
+  <data name="Col_Release" xml:space="preserve"><value>类型</value></data>
+  <data name="Col_Platforms" xml:space="preserve"><value>平台</value></data>
+  <data name="Col_Installed" xml:space="preserve"><value>安装时间</value></data>
+  <data name="Col_Projects" xml:space="preserve"><value>项目数</value></data>
+  <data name="Col_Released" xml:space="preserve"><value>发布时间</value></data>
+  <data name="Btn_ReleaseNotes" xml:space="preserve"><value>发布说明(_N)</value></data>
+  <data name="Btn_CheckUpdates" xml:space="preserve"><value>检查更新</value></data>
+  <data name="Tip_RefreshInstallations" xml:space="preserve"><value>刷新安装列表 (F5)</value></data>
+  <data name="Menu_CopyEditorPath" xml:space="preserve"><value>复制编辑器路径</value></data>
+  <data name="Menu_SetPreferred" xml:space="preserve"><value>设为首选版本</value></data>
+  <data name="Menu_OpenReleasesApi" xml:space="preserve"><value>在 Releases API 中打开</value></data>
+  <data name="Menu_Download" xml:space="preserve"><value>下载</value></data>
+  <data name="Menu_DownloadAndroidModule" xml:space="preserve"><value>下载 Android 模块</value></data>
+  <data name="Menu_DownloadIOSModule" xml:space="preserve"><value>下载 IOS 模块</value></data>
+  <data name="Menu_DownloadWebGLModule" xml:space="preserve"><value>下载 WebGL 模块</value></data>
+  <data name="Menu_DownloadLinuxModule" xml:space="preserve"><value>下载 Linux 模块</value></data>
+  <data name="Menu_DownloadIL2CPPModule" xml:space="preserve"><value>下载 IL2CPP 模块</value></data>
+  <data name="Menu_DownloadWinDedicatedModule" xml:space="preserve"><value>下载 Windows Dedicated 模块</value></data>
+  <data name="Menu_DownloadLinuxDedicatedModule" xml:space="preserve"><value>下载 Linux Dedicated 模块</value></data>
+  <data name="Menu_Uninstall" xml:space="preserve"><value>卸载</value></data>
+
+  <!-- ==================== 更新选项卡 ==================== -->
+  <data name="Rdo_All" xml:space="preserve"><value>全部</value></data>
+  <data name="Rdo_LTS" xml:space="preserve"><value>LTS</value></data>
+  <data name="Rdo_Tech" xml:space="preserve"><value>Tech</value></data>
+  <data name="Rdo_Alpha" xml:space="preserve"><value>Alpha</value></data>
+  <data name="Rdo_Beta" xml:space="preserve"><value>Beta</value></data>
+  <data name="Tip_FetchReleasedVersions" xml:space="preserve"><value>获取已发布版本</value></data>
+  <data name="Menu_DownloadInBrowser" xml:space="preserve"><value>在浏览器中下载</value></data>
+  <data name="Menu_CopyDownloadURL" xml:space="preserve"><value>复制下载链接</value></data>
+  <data name="Menu_OpenReleaseNotes" xml:space="preserve"><value>打开发布说明</value></data>
+  <data name="Btn_DownloadInstallerBrowser" xml:space="preserve"><value>在浏览器中下载安装程序(_D)</value></data>
+  <data name="Btn_DownloadEditorBrowser" xml:space="preserve"><value>在浏览器中下载编辑器(_D)</value></data>
+  <data name="Btn_DownloadInstall" xml:space="preserve"><value>下载并安装</value></data>
+  <data name="Btn_OpenReleaseNotes" xml:space="preserve"><value>发布说明</value></data>
+  <data name="Btn_CumulativeReleaseNotes" xml:space="preserve"><value>累计发布说明</value></data>
+  <data name="Tip_CumulativeReleaseNotes" xml:space="preserve"><value>显示所选版本与已安装的较旧版本之间的所有发布说明。仅适用于最终版本和补丁版本。</value></data>
+
+  <!-- ==================== 工具选项卡 ==================== -->
+  <data name="Lbl_Folders" xml:space="preserve"><value>文件夹</value></data>
+  <data name="Btn_EditorLogs" xml:space="preserve"><value>编辑器日志(_E)</value></data>
+  <data name="Tip_EditorLogs" xml:space="preserve"><value>浏览编辑器日志文件夹，或中键点击打开 editor.log</value></data>
+  <data name="Btn_PlayerLogs" xml:space="preserve"><value>玩家日志(_P)</value></data>
+  <data name="Tip_PlayerLogs" xml:space="preserve"><value>浏览玩家日志文件夹</value></data>
+  <data name="Btn_CrashLogs" xml:space="preserve"><value>崩溃日志(_C)</value></data>
+  <data name="Tip_CrashLogs" xml:space="preserve"><value>浏览崩溃日志文件夹</value></data>
+  <data name="Btn_AssetPackages" xml:space="preserve"><value>资源包(_S)</value></data>
+  <data name="Tip_AssetPackages" xml:space="preserve"><value>浏览 AssetStore 下载文件夹</value></data>
+  <data name="Btn_CrashDumps" xml:space="preserve"><value>崩溃转储(_D)</value></data>
+  <data name="Tip_CrashDumps" xml:space="preserve"><value>浏览崩溃转储文件夹</value></data>
+  <data name="Btn_UnityCache" xml:space="preserve"><value>Unity 缓存(_U)</value></data>
+  <data name="Tip_UnityCache" xml:space="preserve"><value>浏览 Unity 缓存文件夹</value></data>
+  <data name="Btn_GICache" xml:space="preserve"><value>GI 缓存(_G)</value></data>
+  <data name="Tip_GICache" xml:space="preserve"><value>浏览 Unity GI 缓存文件夹</value></data>
+  <data name="Btn_HubLogs" xml:space="preserve"><value>Hub 日志</value></data>
+  <data name="Tip_HubLogs" xml:space="preserve"><value>浏览 Unity Hub 日志文件夹</value></data>
+  <data name="Lbl_Tools" xml:space="preserve"><value>工具</value></data>
+  <data name="Btn_ADBLogcat" xml:space="preserve"><value>ADB 日志(_A)</value></data>
+  <data name="Tip_ADBLogcat" xml:space="preserve"><value>启动 ADB logcat 命令行</value></data>
+  <data name="Btn_ExcludeFolders" xml:space="preserve"><value>排除文件夹*</value></data>
+  <data name="Tip_ExcludeFolders" xml:space="preserve"><value>将所有编辑器文件夹排除出 Windows Defender</value></data>
+  <data name="Lbl_Links" xml:space="preserve"><value>链接</value></data>
+  <data name="Btn_Resources" xml:space="preserve"><value>资源 🔗</value></data>
+  <data name="Tip_Resources" xml:space="preserve"><value>GitHub 页面中的资源、速查表、SDK 下载列表</value></data>
+  <data name="Lbl_BuildReport" xml:space="preserve"><value>构建报告</value></data>
+  <data name="Tip_ClearReport" xml:space="preserve"><value>清除报告</value></data>
+  <data name="Tip_GetLatestReport" xml:space="preserve"><value>从 Editor.log 获取最新构建报告</value></data>
+  <data name="Tip_PreviousReport" xml:space="preserve"><value>上一个构建报告</value></data>
+  <data name="Tip_NextReport" xml:space="preserve"><value>下一个构建报告</value></data>
+  <data name="Col_Size" xml:space="preserve"><value>大小</value></data>
+  <data name="Col_Percent" xml:space="preserve"><value>%</value></data>
+  <data name="Col_Format" xml:space="preserve"><value>格式</value></data>
+  <data name="Col_Type" xml:space="preserve"><value>类型</value></data>
+  <data name="Menu_OpenExplorerHere" xml:space="preserve"><value>在此处打开资源管理器</value></data>
+  <data name="Menu_CopyPathToClipboard" xml:space="preserve"><value>复制路径到剪贴板</value></data>
+  <data name="Lbl_ElapsedTime" xml:space="preserve"><value>用时：</value></data>
+
+  <!-- ==================== 设置选项卡 ==================== -->
+  <data name="Lbl_UnityInstallFolders" xml:space="preserve"><value>Unity 安装父文件夹</value></data>
+  <data name="Tip_InstallFolders" xml:space="preserve"><value>将在这些文件夹下搜索 Unity 安装</value></data>
+  <data name="Lbl_FoundInstallations" xml:space="preserve"><value>找到 {0} 个安装</value></data>
+  <data name="Btn_AddFolder" xml:space="preserve"><value>添加文件夹(_A)</value></data>
+  <data name="Btn_RemoveFolder" xml:space="preserve"><value>移除文件夹(_R)</value></data>
+  <data name="Grp_Projects" xml:space="preserve"><value>项目</value></data>
+  <data name="Grp_UI" xml:space="preserve"><value>界面</value></data>
+  <data name="Grp_General" xml:space="preserve"><value>通用</value></data>
+  <data name="Grp_System" xml:space="preserve"><value>系统</value></data>
+  <data name="Chk_SearchProjectPath" xml:space="preserve"><value>同时搜索项目路径</value></data>
+  <data name="Tip_SearchProjectPath" xml:space="preserve"><value>从项目文件夹路径和项目名中搜索</value></data>
+  <data name="Chk_EnableProjectRename" xml:space="preserve"><value>启用项目标题重命名 (F2)</value></data>
+  <data name="Tip_EnableProjectRename" xml:space="preserve"><value>仅重命名项目标题，不会重命名项目文件夹！新名称保存到 ProjectSettings/ProjectName.txt</value></data>
+  <data name="Chk_ShowPlatform" xml:space="preserve"><value>显示当前目标平台（若 .csproj 中存在）</value></data>
+  <data name="Tip_ShowPlatform" xml:space="preserve"><value>显示目标平台列</value></data>
+  <data name="Chk_EnablePlatformSelection" xml:space="preserve"><value>启用平台选择（实验性！）</value></data>
+  <data name="Tip_EnablePlatformSelection" xml:space="preserve"><value>选择目标平台</value></data>
+  <data name="Chk_ShowGitBranch" xml:space="preserve"><value>显示 git 分支</value></data>
+  <data name="Tip_ShowGitBranch" xml:space="preserve"><value>显示项目 git 分支信息列</value></data>
+  <data name="Chk_SearchParentFolders" xml:space="preserve"><value>递归搜索父文件夹获取分支信息</value></data>
+  <data name="Tip_SearchParentFolders" xml:space="preserve"><value>递归搜索父文件夹以查找当前分支</value></data>
+  <data name="Chk_CheckPlasticBranch" xml:space="preserve"><value>检查 Plastic 分支</value></data>
+  <data name="Tip_CheckPlasticBranch" xml:space="preserve"><value>若 .git 不存在则检查 plastic 分支</value></data>
+  <data name="Chk_AskNameForQuickProject" xml:space="preserve"><value>询问新项目名称</value></data>
+  <data name="Tip_AskNameForQuickProject" xml:space="preserve"><value>禁用后将使用自动快速项目命名（建议启用，除非希望即时创建项目）</value></data>
+  <data name="Chk_ShowSRP" xml:space="preserve"><value>显示 SRP 列</value></data>
+  <data name="Tip_ShowSRP" xml:space="preserve"><value>显示可编程渲染管线列</value></data>
+  <data name="Chk_ShowMissingFolderProjects" xml:space="preserve"><value>显示磁盘上不存在的项目</value></data>
+  <data name="Tip_ShowMissingFolderProjects" xml:space="preserve"><value>即使项目文件夹缺失也列出最近项目</value></data>
+  <data name="Btn_PurgeList" xml:space="preserve"><value>清理列表</value></data>
+  <data name="Tip_PurgeList" xml:space="preserve"><value>从最近列表（设置数据中）清理项目文件夹缺失的项目</value></data>
+  <data name="Chk_ShowArgumentsColumn" xml:space="preserve"><value>显示命令行参数列</value></data>
+  <data name="Tip_ShowArgumentsColumn" xml:space="preserve"><value>显示自定义项目命令行参数列</value></data>
+  <data name="Lbl_ProjectName" xml:space="preserve"><value>项目名称：</value></data>
+  <data name="Rdo_ProjNameFolder" xml:space="preserve"><value>ProjectName.txt 或文件夹</value></data>
+  <data name="Tip_ProjNameFolder" xml:space="preserve"><value>从项目文件夹名或 ProjectSettings/ 下的 ProjectName.txt 获取项目名</value></data>
+  <data name="Rdo_ProjNameProductName" xml:space="preserve"><value>设置中的 ProductName</value></data>
+  <data name="Tip_ProjNameProductName" xml:space="preserve"><value>从 Player Settings 的 ProductName 字段获取项目名</value></data>
+  <data name="Chk_OverrideProjectCount" xml:space="preserve"><value>最大最近项目数</value></data>
+  <data name="Tip_OverrideProjectCount" xml:space="preserve"><value>（实验性）将所有最近项目保存到偏好并合并到最近列表</value></data>
+  <data name="Lbl_Experimental" xml:space="preserve"><value>（实验性！）</value></data>
+  <data name="Tip_MaxProjectCount" xml:space="preserve"><value>40 个项目来自 Unity 注册表，其余来自偏好数据</value></data>
+  <data name="Chk_UseInitScript" xml:space="preserve"><value>为新项目使用初始化脚本</value></data>
+  <data name="Tip_UseInitScript" xml:space="preserve"><value>在新项目上运行编辑器脚本（进行自定义设置）</value></data>
+  <data name="Tip_CustomInitFileURL" xml:space="preserve"><value>获取初始化文件的 URL 或本地文件夹（注意：不会自动获取，仅在点击 Fetch 按钮时获取）</value></data>
+  <data name="Btn_ExploreScriptsFolder" xml:space="preserve"><value>...</value></data>
+  <data name="Tip_ExploreScriptsFolder" xml:space="preserve"><value>浏览脚本文件夹</value></data>
+  <data name="Btn_Fetch" xml:space="preserve"><value>获取</value></data>
+  <data name="Tip_FetchInitScript" xml:space="preserve"><value>从该位置复制最新脚本（将现有脚本重命名为 *.bak）</value></data>
+  <data name="Lbl_RootFolderForNewProjects" xml:space="preserve"><value>新项目根文件夹</value></data>
+  <data name="Tip_RootFolderForNewProjects" xml:space="preserve"><value>快速新建项目的根文件夹（无需每次选择项目文件夹）</value></data>
+  <data name="Btn_BrowseProjectRootFolder" xml:space="preserve"><value>...</value></data>
+  <data name="Tip_BrowseProjectRootFolder" xml:space="preserve"><value>浏览新项目根文件夹..</value></data>
+  <data name="Lbl_WebglRelativePath" xml:space="preserve"><value>WebGL 相对构建路径（位于 Builds/ 内）</value></data>
+  <data name="Tip_WebglRelativePath" xml:space="preserve"><value>Builds/ 文件夹内可能有单独的 webgl 构建文件夹，如 webgl/。用于在此启动 WebGL 服务器</value></data>
+  <data name="Chk_HumanFriendlyDateTime" xml:space="preserve"><value>使用人性化的修改时间</value></data>
+  <data name="Tip_HumanFriendlyDateTime" xml:space="preserve"><value>最后修改日期格式</value></data>
+  <data name="Chk_UseCustomLastModified" xml:space="preserve"><value>日期格式</value></data>
+  <data name="Tip_CustomDateFormat" xml:space="preserve"><value>最后修改日期格式</value></data>
+  <data name="Tip_DefaultDateFormat" xml:space="preserve"><value>默认为 dd/MM/yyyy HH:mm:ss</value></data>
+  <data name="Chk_UseCustomTheme" xml:space="preserve"><value>加载自定义主题</value></data>
+  <data name="Tip_UseCustomTheme" xml:space="preserve"><value>从应用程序文件夹加载 theme.ini</value></data>
+  <data name="Tip_CustomThemeFile" xml:space="preserve"><value>默认为 theme.ini</value></data>
+  <data name="Tip_ReloadTheme" xml:space="preserve"><value>重新加载主题</value></data>
+  <data name="Tip_ExploreThemesFolder" xml:space="preserve"><value>浏览主题文件夹</value></data>
+  <data name="Tip_ThemeEditor" xml:space="preserve"><value>打开主题编辑器</value></data>
+  <data name="Chk_MinimizeToTaskbar" xml:space="preserve"><value>最小化到托盘</value></data>
+  <data name="Tip_MinimizeToTaskbar" xml:space="preserve"><value>最小化时隐藏到任务栏图标区域</value></data>
+  <data name="Chk_QuitAfterOpen" xml:space="preserve"><value>打开项目后关闭</value></data>
+  <data name="Tip_QuitAfterOpen" xml:space="preserve"><value>运行项目后关闭启动器（不太实用）</value></data>
+  <data name="Chk_QuitAfterCommandline" xml:space="preserve"><value>从资源管理器启动后关闭</value></data>
+  <data name="Tip_QuitAfterCommandline" xml:space="preserve"><value>从命令行或资源管理器运行后关闭启动器（推荐）</value></data>
+  <data name="Chk_AllowSingleInstanceOnly" xml:space="preserve"><value>仅允许单个实例</value></data>
+  <data name="Tip_AllowSingleInstanceOnly" xml:space="preserve"><value>激活已运行实例而非启动新 exe（应用最小化到任务栏时无效）</value></data>
+  <data name="Chk_UseAlphaReleaseNotes" xml:space="preserve"><value>使用 Unity Alpha 发布说明站点（仅适用于最终版本） </value></data>
+  <data name="Tip_UseAlphaReleaseNotes" xml:space="preserve"><value>点击 ReleaseNotes 按钮时使用更优的（但 alpha）Unity 发布说明站点 (https://alpha.release-notes.ds.unity3d.com/)。否则使用普通构建页面。</value></data>
+  <data name="Chk_UseUnofficialReleaseList" xml:space="preserve"><value>使用非官方发布监视列表（用于最新下载）</value></data>
+  <data name="Tip_UseUnofficialReleaseList" xml:space="preserve"><value>从 https://github.com/unitycoder/UnofficialUnityReleasesWatcher 检查最新发布（若 Releases API 中尚无）</value></data>
+  <data name="Chk_DisableUnityHubLaunch" xml:space="preserve"><value>启动编辑器时禁用 UnityHub</value></data>
+  <data name="Tip_DisableUnityHubLaunch" xml:space="preserve"><value>覆盖 UnityHub IPC 端口。注意：编辑器中将登出！</value></data>
+  <data name="Chk_FetchAdditionalInfo" xml:space="preserve"><value>获取编辑器附加信息</value></data>
+  <data name="Tip_FetchAdditionalInfo" xml:space="preserve"><value>读取 Releases API 获取安全相关信息</value></data>
+  <data name="Chk_FetchOnlineTemplates" xml:space="preserve"><value>新项目窗口：获取在线模板</value></data>
+  <data name="Tip_FetchOnlineTemplates" xml:space="preserve"><value>自动从 Unity 服务器获取模板列表</value></data>
+  <data name="Chk_StreamerMode" xml:space="preserve"><value>主播模式（隐藏项目名和路径）</value></data>
+  <data name="Tip_StreamerMode" xml:space="preserve"><value>在主视图中隐藏项目名和路径</value></data>
+  <data name="Chk_ShowRecoveredScenePopup" xml:space="preserve"><value>编辑器崩溃后显示恢复场景弹窗</value></data>
+  <data name="Tip_ShowRecoveredScenePopup" xml:space="preserve"><value>编辑器崩溃后显示弹窗以加载恢复场景（或删除）</value></data>
+  <data name="Chk_RegisterExplorerMenu" xml:space="preserve"><value>注册资源管理器右键菜单</value></data>
+  <data name="Tip_RegisterExplorerMenu" xml:space="preserve"><value>为资源管理器右键菜单添加注册表项</value></data>
+  <data name="Chk_RegisterInstallAPKMenu" xml:space="preserve"><value>注册"安装 APK"资源管理器右键菜单</value></data>
+  <data name="Tip_RegisterInstallAPKMenu" xml:space="preserve"><value>为资源管理器"安装 APK"右键菜单添加注册表项</value></data>
+  <data name="Chk_RunAutomatically" xml:space="preserve"><value>开机自动运行</value></data>
+  <data name="Tip_RunAutomatically" xml:space="preserve"><value>使用启动注册表键自动运行</value></data>
+  <data name="Chk_RunAutomaticallyMinimized" xml:space="preserve"><value>最小化启动</value></data>
+  <data name="Tip_RunAutomaticallyMinimized" xml:space="preserve"><value>自动启动时最小化到托盘</value></data>
+  <data name="Lbl_WebglPort" xml:space="preserve"><value>WebGL 服务器初始端口</value></data>
+  <data name="Tip_WebglPort" xml:space="preserve"><value>第一个本地 WebGL web 服务器进程的初始端口（下一个为 +1）</value></data>
+  <data name="Lbl_ShortcutBatchFolder" xml:space="preserve"><value>快捷方式 .bat 文件夹</value></data>
+  <data name="Tip_ShortcutBatchFolder" xml:space="preserve"><value>生成的 .bat 文件保存位置（从桌面快捷方式运行）</value></data>
+  <data name="Btn_BrowseBatchFileFolder" xml:space="preserve"><value>...</value></data>
+  <data name="Tip_BrowseBatchFileFolder" xml:space="preserve"><value>浏览 .bat 文件夹（默认位置在 AppData/UnityLauncherPro/ 内且工作正常，此项可选）</value></data>
+  <data name="Lbl_ADBArgs" xml:space="preserve"><value>ADB 参数：</value></data>
+  <data name="Tip_ADBArgs" xml:space="preserve"><value>ADB 命令行参数</value></data>
+  <data name="Btn_Reset" xml:space="preserve"><value>重置</value></data>
+  <data name="Tip_ResetLogCatArgs" xml:space="preserve"><value>重置为默认 logcat 参数</value></data>
+  <data name="Btn_PatchHubConfig" xml:space="preserve"><value>修补 Hub editors.json</value></data>
+  <data name="Tip_PatchHubConfig" xml:space="preserve"><value>修改 json 文件，将 'manual:true' 值改为 'false'，以便通过 Hub 添加模块。注意：此操作不可逆（不记录哪些值原本为 'false'）</value></data>
+  <data name="Lbl_IfWantModules" xml:space="preserve"><value>*如需从 Hub 安装模块</value></data>
+  <data name="Btn_ViewInGithub" xml:space="preserve"><value>在 Github 中查看</value></data>
+  <data name="Lbl_Language" xml:space="preserve"><value>语言</value></data>
+  <data name="Tip_Language" xml:space="preserve"><value>应用程序显示语言（部分更改需重启生效）</value></data>
+  <data name="Btn_RestartRequired" xml:space="preserve"><value>（需要重启以完全生效）</value></data>
+
+  <!-- ==================== 新建项目窗口 ==================== -->
+  <data name="Title_NewProject" xml:space="preserve"><value>创建新项目</value></data>
+  <data name="Lbl_UnityVersion" xml:space="preserve"><value>Unity 版本</value></data>
+  <data name="Lbl_ProjectNameLabel" xml:space="preserve"><value>项目名称：</value></data>
+  <data name="Lbl_PlatformLabel" xml:space="preserve"><value>平台：</value></data>
+  <data name="Lbl_Templates" xml:space="preserve"><value>模板：</value></data>
+  <data name="Lbl_Override" xml:space="preserve"><value>覆盖</value></data>
+  <data name="Chk_DX11" xml:space="preserve"><value>DX11</value></data>
+  <data name="Tip_DX11" xml:space="preserve"><value>使用 DX11 而非 DX12</value></data>
+  <data name="Lbl_ProjectRootFolder" xml:space="preserve"><value>项目根文件夹：</value></data>
+  <data name="Tip_BrowseNewProjectFolder" xml:space="preserve"><value>浏览新项目文件夹</value></data>
+  <data name="Tip_CreateMissingFolder" xml:space="preserve"><value>从您的路径创建缺失文件夹</value></data>
+  <data name="Btn_Cancel" xml:space="preserve"><value>取消(_C)</value></data>
+  <data name="Btn_NewProjectRepo" xml:space="preserve"><value>新建项目+仓库</value></data>
+  <data name="Btn_NewProject2" xml:space="preserve"><value>新建项目(_N)</value></data>
+  <data name="Exp_VersionControl" xml:space="preserve"><value>版本控制 (Github)</value></data>
+  <data name="Lbl_ConnectedAs" xml:space="preserve"><value>已连接：</value></data>
+  <data name="Lbl_NotConnected" xml:space="preserve"><value>（未连接）</value></data>
+  <data name="Btn_GetToken" xml:space="preserve"><value>获取令牌 🔗</value></data>
+  <data name="Tip_GetToken" xml:space="preserve"><value>打开 Github 创建令牌</value></data>
+  <data name="Tip_EnterGithubToken" xml:space="preserve"><value>在此输入您的 Github 令牌</value></data>
+  <data name="Btn_Authorize" xml:space="preserve"><value>授权</value></data>
+  <data name="Btn_Disconnect" xml:space="preserve"><value>断开</value></data>
+  <data name="Tip_Disconnect" xml:space="preserve"><value>断开 Github 并删除已保存的令牌</value></data>
+  <data name="Chk_EnableVersionControl" xml:space="preserve"><value>启用版本控制</value></data>
+  <data name="Lbl_Visibility" xml:space="preserve"><value>可见性：</value></data>
+  <data name="Rdo_Private" xml:space="preserve"><value>私有</value></data>
+  <data name="Rdo_Public" xml:space="preserve"><value>公开</value></data>
+  <data name="Chk_Organization" xml:space="preserve"><value>组织：</value></data>
+  <data name="Tip_Organization" xml:space="preserve"><value>启用大文件存储并添加 .gitattributes</value></data>
+  <data name="Lbl_RepoName" xml:space="preserve"><value>仓库名称：</value></data>
+  <data name="Lbl_Description" xml:space="preserve"><value>描述：</value></data>
+  <data name="Chk_EnableLFS" xml:space="preserve"><value>启用 Git LFS </value></data>
+  <data name="Tip_EnableLFS" xml:space="preserve"><value>启用大文件存储并添加 .gitattributes</value></data>
+  <data name="Chk_InitialCommit" xml:space="preserve"><value>创建初始提交</value></data>
+  <data name="Chk_AddUnityGitIgnore" xml:space="preserve"><value>添加 Unity .gitignore</value></data>
+  <data name="Chk_AddReadme" xml:space="preserve"><value>添加 README</value></data>
+  <data name="Tip_AddReadme" xml:space="preserve"><value>添加 README 文件</value></data>
+  <data name="Lbl_OnlineTemplates" xml:space="preserve"><value>在线模板</value></data>
+  <data name="Tip_FetchTemplates" xml:space="preserve"><value>获取模板列表</value></data>
+  <data name="Tip_DownloadTemplate" xml:space="preserve"><value>下载模板</value></data>
+  <data name="Tip_AlreadyDownloaded" xml:space="preserve"><value>已下载</value></data>
+  <data name="Lbl_None" xml:space="preserve"><value>无</value></data>
+  <data name="Lbl_CreateProject" xml:space="preserve"><value>创建项目</value></data>
+  <data name="Btn_DownloadTemplateFirst" xml:space="preserve"><value>先下载模板 &gt;</value></data>
+  <data name="Lbl_TemplatesCount" xml:space="preserve"><value>模板：({0})</value></data>
+
+  <!-- 新建项目状态消息 -->
+  <data name="Status_NoUnityForNewProject" xml:space="preserve"><value>未找到 Unity 安装！请先添加 Unity 安装。</value></data>
+  <data name="Status_GitInitialized" xml:space="preserve"><value>Git 仓库已初始化：{0}</value></data>
+  <data name="Status_GitInitFailed" xml:space="preserve"><value>Git 初始化失败：{0}</value></data>
+  <data name="Status_GithubFailed" xml:space="preserve"><value>GitHub 仓库创建失败：{0}</value></data>
+  <data name="Status_FolderNotExist" xml:space="preserve"><value>文件夹不存在。</value></data>
+  <data name="Status_NameEmptyOrExists" xml:space="preserve"><value>项目名称为空或已存在。</value></data>
+  <data name="Status_TemplateNotDownloaded" xml:space="preserve"><value>所选在线模板未下载。</value></data>
+  <data name="Status_GitAlreadyExists" xml:space="preserve"><value>项目文件夹中已存在 Git 仓库。</value></data>
+  <data name="Status_NameSpaceWarning" xml:space="preserve"><value>警告：项目名称以空格开头或结尾</value></data>
+  <data name="Status_ValidatingToken" xml:space="preserve"><value>正在验证令牌...</value></data>
+  <data name="Status_TokenValid" xml:space="preserve"><value>令牌有效。已登录为 {0}。</value></data>
+  <data name="Status_UnknownGithubError" xml:space="preserve"><value>未知的 GitHub 错误。</value></data>
+
+  <!-- ==================== 项目属性窗口 ==================== -->
+  <data name="Title_ProjectProperties" xml:space="preserve"><value>项目属性</value></data>
+  <data name="Lbl_EnvVariables" xml:space="preserve"><value>自定义环境变量：</value></data>
+  <data name="Btn_Apply" xml:space="preserve"><value>应用</value></data>
+  <data name="Btn_CancelShort" xml:space="preserve"><value>取消</value></data>
+
+  <!-- ==================== 下载进度窗口 ==================== -->
+  <data name="Title_DownloadProgress" xml:space="preserve"><value>下载进度</value></data>
+  <data name="Btn_CancelDownload" xml:space="preserve"><value>取消</value></data>
+
+  <!-- ==================== 升级窗口 ==================== -->
+  <data name="Title_UpgradeProject" xml:space="preserve"><value>升级项目版本</value></data>
+  <data name="Lbl_ProjectVersion" xml:space="preserve"><value>项目版本：</value></data>
+  <data name="Lbl_Platform2" xml:space="preserve"><value>平台：</value></data>
+  <data name="Lbl_AvailableVersions" xml:space="preserve"><value>可用的 Unity 版本</value></data>
+  <data name="Btn_ReleaseNotes3" xml:space="preserve"><value>发布说明(_R)</value></data>
+  <data name="Tip_OpenReleasePage" xml:space="preserve"><value>在浏览器中打开发布说明页面</value></data>
+  <data name="Btn_DownloadInBrowser" xml:space="preserve"><value>在浏览器中下载(_B)</value></data>
+  <data name="Btn_DownloadEditorInBrowser" xml:space="preserve"><value>在浏览器中下载编辑器(_B)</value></data>
+  <data name="Btn_DownloadInstall2" xml:space="preserve"><value>下载并安装(_D)</value></data>
+  <data name="Tip_DownloadInstall" xml:space="preserve"><value>下载 Unity web 安装程序到 Temp 文件夹并运行（根文件夹路径复制到剪贴板）</value></data>
+  <data name="Btn_CancelUpgrade" xml:space="preserve"><value>取消(_C)</value></data>
+  <data name="Btn_UpgradeProject" xml:space="preserve"><value>升级项目(_U)</value></data>
+  <data name="Tip_UpgradeProject" xml:space="preserve"><value>使用所选 Unity 版本启动</value></data>
+
+  <!-- ==================== 主题编辑器 ==================== -->
+  <data name="Col_Key" xml:space="preserve"><value>键</value></data>
+  <data name="Col_Value" xml:space="preserve"><value>值</value></data>
+  <data name="Lbl_Red" xml:space="preserve"><value>红</value></data>
+  <data name="Lbl_Green" xml:space="preserve"><value>绿</value></data>
+  <data name="Lbl_Blue" xml:space="preserve"><value>蓝</value></data>
+  <data name="Lbl_Alpha" xml:space="preserve"><value>透明度</value></data>
+  <data name="Btn_ResetTheme" xml:space="preserve"><value>重置主题</value></data>
+  <data name="Btn_SaveTheme" xml:space="preserve"><value>保存主题</value></data>
+  <data name="Tip_CurrentColor" xml:space="preserve"><value>当前颜色</value></data>
+
+  <!-- ==================== 搜索框 ==================== -->
+  <data name="Search_Placeholder" xml:space="preserve"><value>搜索</value></data>
+
+  <!-- ==================== C# 消息框 / 状态 ==================== -->
+  <data name="Msg_NoUnityInstalled" xml:space="preserve"><value>未找到 Unity 安装。请先运行 UnityLauncherPro 并在设置选项卡中配置 Unity 编辑器根文件夹。</value></data>
+  <data name="Msg_CorruptSettingsBody" xml:space="preserve"><value>这可能是由于 Windows 崩溃/蓝屏引起的。
+点击"是"使用自动备份（若存在，否则重置设置），然后重新启动应用程序。
+
+点击"否"重置配置文件（需要重新配置设置）
+
+点击"取消"立即退出（并手动删除 user.config）
+
+损坏的文件：{0}</value></data>
+  <data name="Msg_CorruptSettingsTitle" xml:space="preserve"><value>{0} - 用户设置损坏</value></data>
+  <data name="Msg_RemoveProjectBody" xml:space="preserve"><value>确定要从列表中移除项目吗？
+
+{0}</value></data>
+  <data name="Msg_RemoveProjectTitle" xml:space="preserve"><value>移除项目</value></data>
+  <data name="Msg_PatchHubConfigBody" xml:space="preserve"><value>这将修改当前 {0} 文件。确定要继续吗？（此操作不可逆，我们不知道哪些值原本为 false）</value></data>
+  <data name="Msg_PatchHubConfigTitle" xml:space="preserve"><value>修补 Hub 配置</value></data>
+  <data name="Msg_NoUnityVersionsInstalled" xml:space="preserve"><value>未安装 Unity 版本。请先运行 {0} 配置根文件夹。</value></data>
+  <data name="Msg_SceneRecoveryBody" xml:space="preserve"><value>发现崩溃恢复场景，是否将其移动到 Assets/_Recovery/ 文件夹？</value></data>
+  <data name="Msg_SceneRecoveryTitle" xml:space="preserve"><value>UnityLauncherPro - 场景恢复</value></data>
+  <data name="Msg_CancelledPrivileges" xml:space="preserve"><value>操作因权限不足而取消或失败。</value></data>
+  <data name="Msg_CancelledTitle" xml:space="preserve"><value>已取消</value></data>
+  <data name="Msg_ErrorPrefix" xml:space="preserve"><value>错误：{0}</value></data>
+  <data name="Msg_ErrorTitle" xml:space="preserve"><value>错误</value></data>
+  <data name="Msg_FailedOpenURL" xml:space="preserve"><value>打开 URL 失败：{0}</value></data>
+  <data name="Msg_InformationTitle" xml:space="preserve"><value>信息</value></data>
+  <data name="Msg_WarningTitle" xml:space="preserve"><value>警告</value></data>
+  <data name="Msg_LanguageRestartTitle" xml:space="preserve"><value>语言已更改</value></data>
+  <data name="Msg_LanguageRestartBody" xml:space="preserve"><value>语言已更改。请重启应用程序以使所有更改生效。</value></data>
+  <data name="Menu_CheckUpdates" xml:space="preserve"><value>检查更新</value></data>
+  <data name="Tip_Builds" xml:space="preserve"><value>构建</value></data>
+
+</root>

@@ -1,4 +1,4 @@
-﻿// Unity Project Launcher by https://unitycoder.com
+// Unity Project Launcher by https://unitycoder.com
 // https://github.com/unitycoder/UnityLauncherPro
 
 using System;
@@ -26,6 +26,7 @@ using System.Windows.Shell;
 using System.Windows.Threading;
 using UnityLauncherPro.Data;
 using UnityLauncherPro.Helpers;
+using UnityLauncherPro.Localization;
 using UnityLauncherPro.Properties;
 
 namespace UnityLauncherPro
@@ -112,7 +113,7 @@ namespace UnityLauncherPro
             // set version number
             if (string.IsNullOrEmpty(Version.Stamp) == false)
             {
-                lblVersion.Content = "Build: " + Version.Stamp;
+                lblVersion.Content = LocalizationManager.Instance["Build_Prefix"] + Version.Stamp;
             }
         }
 
@@ -353,7 +354,7 @@ namespace UnityLauncherPro
                             }
                             else
                             {
-                                MessageBox.Show("No Unity installations found. Please setup Unity Editor root folders first by running UnityLauncherPro.", "No Unity Installations found", MessageBoxButton.OK, MessageBoxImage.Warning);
+                                MessageBox.Show(LocalizationManager.Instance["Msg_NoUnityInstalled"], LocalizationManager.Instance["Msg_WarningTitle"], MessageBoxButton.OK, MessageBoxImage.Warning);
                                 // TODO display setup tab
                             }
 
@@ -757,16 +758,17 @@ namespace UnityLauncherPro
                 {
                     maxProjectCount = 40;
                 }
+
+                // initialize language selector
+                cmbLanguage.ItemsSource = LocalizationManager.SupportedLanguages;
+                cmbLanguage.SelectedValue = Settings.Default.language ?? "";
             }
             catch (ConfigurationErrorsException ex)
             {
                 string filename = ((ConfigurationErrorsException)ex.InnerException).Filename;
 
-                var res = MessageBox.Show("This may be due to a Windows crash/BSOD.\n" +
-                                      "Click 'Yes' to use automatic backup (if exists, otherwise settings are reset), then start application again.\n\n" +
-                                      "Click 'No' to reset config file (you'll need to setup settings again)\n\n" +
-                                      "Click 'Cancel' to exit now (and delete user.config manually)\n\nCorrupted file: " + filename,
-                                      appName + " - Corrupt user settings",
+                var res = MessageBox.Show(string.Format(LocalizationManager.Instance["Msg_CorruptSettingsBody"], filename),
+                                      string.Format(LocalizationManager.Instance["Msg_CorruptSettingsTitle"], appName),
                                       MessageBoxButton.YesNoCancel,
                                       MessageBoxImage.Error);
 
@@ -857,6 +859,8 @@ namespace UnityLauncherPro
             }
             Settings.Default.gridColumnWidthsBuildReport = gridWidths.ToArray();
             Settings.Default.projectName = projectNameSetting;
+            // save language setting
+            Settings.Default.language = cmbLanguage.SelectedValue as string ?? "";
             Settings.Default.Save();
 
             // make backup
@@ -889,7 +893,7 @@ namespace UnityLauncherPro
                 }
             }
 
-            lblFoundXInstallations.Content = "Found " + unityInstallationsSource.Count + " installations";
+            lblFoundXInstallations.Content = string.Format(LocalizationManager.Instance["Lbl_FoundInstallations"], unityInstallationsSource.Count);
             btnCreateEmptyProject.IsEnabled = unityInstallationsSource.Count > 0;
 
             // try to select previous selection
@@ -1255,7 +1259,7 @@ namespace UnityLauncherPro
                 // streamer mode, show first char and last 3 chars, rest as *
                 var cleantitle = proj.Title[0] + new string('*', proj.Title.Length - 1);
                 var title = chkStreamerMode.IsChecked == true ? cleantitle : proj.Title;
-                var result = MessageBox.Show("Are you sure you want to remove project from list?\n\n" + title, "Remove project", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                var result = MessageBox.Show(string.Format(LocalizationManager.Instance["Msg_RemoveProjectBody"], title), LocalizationManager.Instance["Msg_RemoveProjectTitle"], MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (result == MessageBoxResult.No) return;
             }
 
@@ -1827,6 +1831,29 @@ namespace UnityLauncherPro
         private void BtnOpenGithub_Click(object sender, RoutedEventArgs e)
         {
             Process.Start(githubURL);
+        }
+
+        // 语言选择变更 - 实时切换界面语言
+        private void CmbLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // 在初始化期间或未设置 ItemsSource 时跳过
+            if (cmbLanguage.ItemsSource == null || e.RemovedItems == null || e.RemovedItems.Count == 0)
+                return;
+
+            var selected = cmbLanguage.SelectedValue as string;
+            if (selected == null)
+                return;
+
+            // 仅当值确实变更时才切换
+            var current = Settings.Default.language ?? "";
+            if (selected == current)
+                return;
+
+            Settings.Default.language = selected;
+            Settings.Default.Save();
+
+            // 立即应用新语言（无需重启）
+            LocalizationManager.SetLanguage(selected);
         }
 
         // finished editing project name cell or launcher argument cell or platform cells
@@ -3597,7 +3624,7 @@ namespace UnityLauncherPro
             // read the config file from %APPDATA%
             var configFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "UnityHub", "editors.json");
 
-            var result = MessageBox.Show("This will modify current " + configFile + " file. Are you sure you want to continue? (This cannot be undone, we dont know which 'manual:'-value was already set to 'false' (but it shouldnt break anything))", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            var result = MessageBox.Show(string.Format(LocalizationManager.Instance["Msg_PatchHubConfigBody"], configFile), LocalizationManager.Instance["Msg_PatchHubConfigTitle"], MessageBoxButton.YesNo, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
                 if (File.Exists(configFile) == true)

@@ -4,7 +4,7 @@ using System.Windows.Input;
 
 namespace UnityLauncherPro
 {
-    public partial class DownloadProgressWindow
+    public partial class DownloadProgressWindow : Window
     {
         private readonly Action _cancelAction;
         private readonly string _subjectName;
